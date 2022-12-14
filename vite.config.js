@@ -12,7 +12,7 @@ export default defineConfig({
       fileName: (format) => `index.${format}.client.js`,
     },
     rollupOptions: {
-      external: ["react", "react-dom", "snakize"],
+      external: ["react", "react-dom"],
       output: {
         globals: {
           react: "React",
