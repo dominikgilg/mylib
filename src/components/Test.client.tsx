@@ -4,7 +4,7 @@ interface NostoProviderProps {
   children: React.ReactElement;
 }
 
-const Test: React.FC<NostoProviderPropss> = ({ children }) => {
+const Test: React.FC<NostoProviderProps> = ({ children }) => {
 
   return (
       <div className="hallo-test">{children}</div>
