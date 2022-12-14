@@ -19,6 +19,7 @@
     "prepare": "vite build",
     "prepack": "vite build",
     "postpack": "vite build",
+    "postinstall": "vite build",
     "typecheck": "tsc",
     "tslint": "tslint 'src/**/*.ts?(x)'",
     "clean": "rimraf dist",
