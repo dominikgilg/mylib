@@ -4,7 +4,6 @@
   "version": "0.1.7",
   "author": "Mridang Agarwalla, Dominik Gilg",
   "license": "ISC",
-  "type": "module",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Nosto/nosto-react.git"
