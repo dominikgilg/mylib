@@ -18,7 +18,9 @@
     "dev": "vite",
     "build": "vite build",
     "preview": "vite preview",
-    "prepare": "vite build"
+    "prepare": "vite build",
+    "postpack": "vite build",
+    "postinstall": "vite build"
   },
   "dependencies": {
     "@vitejs/plugin-react": "^3.0.0"
