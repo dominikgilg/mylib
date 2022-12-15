@@ -1,17 +1,17 @@
 {
   "name": "@nosto/lib-test",
   "private": true,
-  "version": "1.5.0",
+  "version": "1.6.0",
   "type": "module",
   "files": [
     "dist",
     "src"
   ],
   "main": "dist/index.client.cjs",
-  "module": "dist/index.client.js",
+  "module": "dist/index.client.esm.js",
   "exports": {
     ".": {
-      "import": "./dist/index.client.js",
+      "import": "./dist/index.client.esm.js",
       "require": "./dist/index.client.cjs"
     }
   },
