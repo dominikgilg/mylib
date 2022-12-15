@@ -22,7 +22,7 @@
     "postinstall": "vite build"
   },
   "dependencies": {
-    "@nosto/nosto-react": "^0.1.7",
+    "@nosto/lib-test": "github:dominikgilg/mylib",
     "@vitejs/plugin-react": "^3.0.0",
     "vite": "^4.0.0"
   },
