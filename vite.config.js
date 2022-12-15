@@ -6,13 +6,12 @@ export default defineConfig({
   plugins: [react()],
   build: {
     lib: {
-      entry: resolve(__dirname, "src/index.client.ts"),
-      name: "@nosto/nosto-react",
-      formats: ["es", "umd"],
-      fileName: (format) => `index.${format}.client.js`,
+      entry: resolve(__dirname, "src/index.js"),
+      name: "@nosto/lib-test",
+      fileName: "index",
     },
     rollupOptions: {
-      external: ["react", "react-dom"],
+      external: ["react", "react-dom", "snakize"],
       output: {
         globals: {
           react: "React",

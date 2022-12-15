@@ -1,59 +1,33 @@
 {
-  "name": "@nosto/nosto-react",
-  "description": "Component library to simply implementing Nosto on React.",
-  "version": "0.1.7",
-  "author": "Mridang Agarwalla, Dominik Gilg",
-  "license": "ISC",
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/Nosto/nosto-react.git"
-  },
-  "keywords": [
-    "nosto",
-    "personalisation"
-  ],
-  "scripts": {
-    "dev": "vite",
-    "build": "tsc && vite build",
-    "preview": "vite preview",
-    "prepare": "yarn build",
-    "postinstall": "yarn build",
-    "typecheck": "tsc",
-    "tslint": "tslint 'src/**/*.ts?(x)'",
-    "clean": "rimraf dist",
-    "prettier": "prettier '*/**/*.{ts,tsx,js,jsx,html,css,less}' --list-different",
-    "prettier:fix": "prettier '*/**/*.{ts,tsx,js,jsx,html,css,less}' --write"
-  },
+  "name": "@nosto/lib-test",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
   "files": [
-    "dist",
-    "src"
+    "dist"
   ],
-  "dependencies": {
-    "snakeize": "^0.1.0",
-    "use-deep-compare-effect": "^1.3.1",
-    "react-router": "^6.3.0",
-    "react-router-dom": "^6.3.0",
-    "@vitejs/plugin-react": "^1.3.0"
-  },
-  "devDependencies": {
-    "@types/react": "^18.0.0",
-    "@types/react-dom": "^18.0.0",
-    "vite": "^2.9.9",
-    "typescript": "^4.6.3",
-    "prettier": "^2.0.5",
-    "rimraf": "^3.0.2"
-  },
-  "main": "./dist/index.es.client.js",
-  "module": "./dist/index.es.client.js",
-  "types": "./src/types.ts",
+  "main": "./dist/idnex.umd.cjs",
+  "module": "./dist/index.js",
   "exports": {
     ".": {
-      "import": "./dist/index.es.client.js",
-      "require": "./dist/index.umd.client.js"
+      "import": "./dist/index.js",
+      "require": "./dist/index.umd.cjs"
     }
   },
-  "bugs": {
-    "url": "https://github.com/Nosto/nosto-react/issues"
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "postinstall": "yarn build"
   },
-  "homepage": "https://github.com/Nosto/nosto-react#readme"
+  "dependencies": {
+    "@vitejs/plugin-react": "^3.0.0"
+  },
+  "devDependencies": {
+    "@types/react": "^18.0.26",
+    "@types/react-dom": "^18.0.9",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "vite": "^4.0.0"
+  }
 }
