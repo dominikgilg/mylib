@@ -7,12 +7,12 @@ export default defineConfig({
   build: {
     lib: {
       entry: resolve(__dirname, "src/index.client.js"),
-      name: "@nosto/lib-tessst",
+      name: "@nosto/lib-test",
       formats: ["es", "umd"],
       fileName: (format) => `index.${format}.client.js`,
     },
     rollupOptions: {
-      external: ["react", "react-dom", "@nosto/nosto-react"],
+      external: ["react", "react-dom"],
       output: {
         globals: {
           react: "React",
