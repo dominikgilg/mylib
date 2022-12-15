@@ -8,10 +8,10 @@
     "src"
   ],
   "main": "dist/index.client.cjs",
-  "module": "dist/index.client.esm.js",
+  "module": "dist/index.client.js",
   "exports": {
     ".": {
-      "import": "./dist/index.client.esm.js",
+      "import": "./dist/index.client.js",
       "require": "./dist/index.client.cjs"
     }
   },

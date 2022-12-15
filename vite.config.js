@@ -10,7 +10,8 @@ export default defineConfig({
       entry: resolve(__dirname, "src/index.client.js"),
       name: "@nosto/lib-test",
       formats: ["esm", "cjs"],
-      fileName: "index.client",
+      fileName: (format) =>
+        format == "esm" ? "index.client.js" : "index.client.cjs",
     },
     rollupOptions: {
       external: ["react", "react-dom"],
