@@ -3,7 +3,8 @@
   "private": true,
   "version": "0.0.0",
   "files": [
-    "dist"
+    "dist",
+    "src"
   ],
   "main": "./dist/lib-test.umd.cjs",
   "module": "./dist/lib-test.js",
