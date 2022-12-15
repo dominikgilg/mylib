@@ -1,18 +1,18 @@
 {
   "name": "@nosto/lib-test",
   "private": true,
-  "version": "0.0.0",
+  "version": "1.0.0",
   "type": "module",
   "files": [
     "dist",
     "src"
   ],
-  "main": "./dist/index.umd.client.js",
-  "module": "./dist/index.es.client.js",
+  "main": "dist/index.cjs",
+  "module": "dist/index.esm.js",
   "exports": {
     ".": {
-      "import": "./dist/index.es.client.js",
-      "require": "./dist/index.umd.client.js"
+      "import": "./dist/index.esm.js",
+      "require": "./dist/index.cjs"
     }
   },
   "scripts": {
