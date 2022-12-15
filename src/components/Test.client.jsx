@@ -1,7 +1,8 @@
 import { useEffect } from "react";
+import { NostoProvider } from "@nosto/nosto-react";
 
 function Test({ children }) {
-  console.log("inside TEST 3");
+  console.log("inside TEST 4");
 
   useEffect(() => {
     console.log("USE EFFECT");
@@ -10,7 +11,7 @@ function Test({ children }) {
   return (
     <div className="dom-test">
       TEST!!!
-      {children}
+      <NostoProvider account="asdasdas">{children}</NostoProvider>
     </div>
   );
 }
