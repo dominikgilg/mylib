@@ -13,9 +13,11 @@ export default defineConfig({
       fileName: "index.client",
     },
     rollupOptions: {
+      external: ["react", "react-dom"],
       output: {
         globals: {
           react: "React",
+          "react-dom": "ReactDOM",
         },
       },
     },

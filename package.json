@@ -1,7 +1,7 @@
 {
   "name": "@nosto/lib-test",
   "private": true,
-  "version": "1.7.0",
+  "version": "1.5.0",
   "type": "module",
   "files": [
     "dist",
@@ -24,7 +24,6 @@
   },
   "dependencies": {
     "@vitejs/plugin-react": "^3.0.0",
-    "react-client-only": "^1.0.2",
     "vite": "^4.0.0"
   },
   "devDependencies": {
