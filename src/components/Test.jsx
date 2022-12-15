@@ -1,9 +1,11 @@
 "use client";
 
-import { React, useEffect } from "react";
+import { useEffect } from "react";
 
 function Test({ children }) {
-  console.log({ React, useEffect });
+  console.log("inside TEST");
+
+  console.log({ useEffect });
 
   return <div className="dom-test">{children}</div>;
 }
