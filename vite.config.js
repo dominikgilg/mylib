@@ -12,7 +12,7 @@ export default defineConfig({
       fileName: (format) => `index.${format}.client.js`,
     },
     rollupOptions: {
-      external: ["react", "react-dom"],
+      external: ["react", "react-dom", "@nosto/nosto-react"],
       output: {
         globals: {
           react: "React",
