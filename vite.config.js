@@ -9,7 +9,7 @@ export default defineConfig({
     lib: {
       entry: resolve(__dirname, "src/index.client.js"),
       name: "@nosto/lib-test",
-      formats: ["es", "umd"],
+      formats: ["esm", "cjs"],
       fileName: (format) => `index.${format}.client.js`,
     },
     rollupOptions: {

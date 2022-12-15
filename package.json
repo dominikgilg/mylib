@@ -7,12 +7,12 @@
     "dist",
     "src"
   ],
-  "main": "dist/index.umd.client.js",
-  "module": "dist/index.client.es.client.js",
+  "main": "dist/index.cjs.client.js",
+  "module": "dist/index.client.esm.client.js",
   "exports": {
     ".": {
-      "import": "./dist/index.es.client.js",
-      "require": "./dist/index.umd.client.js"
+      "import": "./dist/index.esm.client.js",
+      "require": "./dist/index.cjs.client.js"
     }
   },
   "scripts": {
