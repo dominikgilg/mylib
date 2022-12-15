@@ -1,0 +1,34 @@
+import { NostoSession } from "@nosto/nosto-react";
+import { useShopQuery, gql, useSession, useShop } from "@shopify/hydrogen";
+import Crypto from "crypto";
+
+export default function NostoSession(props) {
+  console.log("NOSTO SESSION!!!");
+
+  const { storeDomain } = useShop();
+  const { customerAccessToken } = useSession();
+  const QUERY = gql`
+          query {
+          customer(customerAccessToken: "${customerAccessToken}") {
+            firstName
+            lastName
+            email
+            acceptsMarketing
+            id
+          }
+        }
+        `;
+  const {
+    data: { customer: customerData },
+  } = useShopQuery({
+    query: QUERY,
+  });
+
+  if (customerData?.id && storeDomain) {
+    customerData.customerReference = Crypto.createHash("sha256")
+      .update(customerData.id + storeDomain)
+      .digest("hex");
+  }
+
+  return <NostoSession customerData={customerData} type="NostoSession" />;
+}
