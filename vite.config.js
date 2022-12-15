@@ -6,10 +6,10 @@ export default defineConfig({
   plugins: [react()],
   build: {
     lib: {
-      entry: resolve(__dirname, "src/index.js"),
+      entry: resolve(__dirname, "src/index.client.js"),
       name: "@nosto/lib-test",
       formats: ["es", "umd"],
-      fileName: (format) => `index.${format}.js`,
+      fileName: (format) => `index.${format}.client.js`,
     },
     rollupOptions: {
       external: ["react", "react-dom"],
