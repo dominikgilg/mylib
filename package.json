@@ -6,12 +6,12 @@
     "dist",
     "src"
   ],
-  "main": "src/index.client.js",
-  "module": "src/index.client.js",
+  "main": "src/index.js",
+  "module": "src/index.js",
   "exports": {
     ".": {
-      "import": "./src/index.client.js",
-      "require": "./src/index.client.js"
+      "import": "./src/index.js",
+      "require": "./src/index.js"
     }
   },
   "scripts": {
