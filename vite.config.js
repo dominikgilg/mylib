@@ -7,7 +7,7 @@ export default defineConfig({
   build: {
     lib: {
       entry: resolve(__dirname, "src/index.client.js"),
-      name: "@nosto/lib-test",
+      name: "@nosto/lib-tessst",
       formats: ["es", "umd"],
       fileName: (format) => `index.${format}.client.js`,
     },
