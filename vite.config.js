@@ -8,7 +8,7 @@ export default defineConfig({
     lib: {
       entry: resolve(__dirname, "src/index.js"),
       name: "@nosto/lib-test",
-      fileName: "index",
+      fileName: "lib-test",
     },
     rollupOptions: {
       external: ["react", "react-dom"],
