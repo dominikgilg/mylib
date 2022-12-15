@@ -6,7 +6,7 @@
   "files": [
     "dist"
   ],
-  "main": "./dist/idnex.umd.cjs",
+  "main": "./dist/index.umd.cjs",
   "module": "./dist/index.js",
   "exports": {
     ".": {

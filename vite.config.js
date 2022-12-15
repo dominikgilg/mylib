@@ -11,7 +11,7 @@ export default defineConfig({
       fileName: "index",
     },
     rollupOptions: {
-      external: ["react", "react-dom", "snakize"],
+      external: ["react", "react-dom"],
       output: {
         globals: {
           react: "React",
