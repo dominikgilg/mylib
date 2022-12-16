@@ -8,7 +8,7 @@ export default defineConfig({
   build: {
     lib: {
       entry: resolve(__dirname, "src/index.js"),
-      name: "@nosto/lib-test",
+      name: "@nosto/nosto-hydrogen",
       formats: ["esm", "cjs"],
       fileName: "index.client",
     },
