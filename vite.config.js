@@ -7,8 +7,9 @@ export default defineConfig({
 
   build: {
     lib: {
-      entry: resolve(__dirname, "src/index.js"),
+      entry: resolve(__dirname, "src/components/index.server.js"),
       name: "@nosto/nosto-hydrogen",
+      fileName: "index.server",
     },
     rollupOptions: {
       external: ["react", "react-dom"],
