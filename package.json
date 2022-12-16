@@ -17,7 +17,9 @@
   },
   "scripts": {
     "dev": "vite",
-    "build": "vite build",
+    "build": "yarn build:client && yarn build:server",
+    "build:client": "NOSTO_ENV=client vite build",
+    "build:server": "NOSTO_ENV=server vite build",
     "preview": "vite preview",
     "prepare": "vite build",
     "postinstall": "vite build"
