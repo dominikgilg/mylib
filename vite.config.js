@@ -15,12 +15,11 @@ export default defineConfig({
       fileName: (format, name) => `index.${format}.${name}.js`,
     },
     rollupOptions: {
-      external: ["react", "react-dom", "crypto"],
+      external: ["react", "react-dom"],
       output: {
         globals: {
           react: "React",
           "react-dom": "ReactDOM",
-          crypto: "Crypto",
         },
       },
     },
