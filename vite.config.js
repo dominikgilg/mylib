@@ -9,8 +9,6 @@ export default defineConfig({
     lib: {
       entry: resolve(__dirname, "src/index.js"),
       name: "@nosto/nosto-hydrogen",
-      formats: ["esm", "cjs"],
-      fileName: "index.client",
     },
     rollupOptions: {
       external: ["react", "react-dom"],
