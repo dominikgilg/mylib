@@ -1,6 +1,6 @@
 // import { NostoSession as NostoComponent } from "@nosto/nosto-react";
 import { useShopQuery, gql, useSession, useShop } from "@shopify/hydrogen";
-import Crypto from "crypto";
+const { createHash } = await import("node:crypto");
 
 export default function NostoServerTest(props) {
   console.log("NOSTO SESSION!!! :)");
@@ -27,7 +27,7 @@ export default function NostoServerTest(props) {
   console.log(customerData?.id);
 
   if (customerData?.id && storeDomain) {
-    customerData.customerReference = Crypto.createHash("sha256")
+    customerData.customerReference = createHash("sha256")
       .update(customerData.id + storeDomain)
       .digest("hex");
   }
