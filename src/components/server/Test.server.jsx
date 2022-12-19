@@ -32,7 +32,7 @@ export default function NostoServerTest(props) {
       .digest("hex");
   }
 
-  console.log("REFEERNCE: ", customerData.customerReference);
+  console.log("REFEERNCE: ", customerData?.customerReference);
 
   return <div>NOSTO SERVER TEST</div>;
   //   return <NostoComponent customerData={customerData} type="NostoSession" />;
