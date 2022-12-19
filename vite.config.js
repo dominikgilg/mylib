@@ -7,7 +7,7 @@ export default defineConfig({
   build: {
     lib: {
       entry: {
-        // client: resolve(__dirname, "src/components/index.client.js"),
+        client: resolve(__dirname, "src/components/index.client.js"),
         server: resolve(__dirname, "src/components/index.server.js"),
       },
       name: "@nosto/nosto-hydrogen",
