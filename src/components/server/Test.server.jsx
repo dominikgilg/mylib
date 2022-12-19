@@ -1,4 +1,4 @@
-import { NostoSession as NostoComponent } from "@nosto/nosto-react/src/index.client";
+import { NostoSession as NostoComponent } from "@nosto/nosto-react";
 import { useShopQuery, gql, useSession, useShop } from "@shopify/hydrogen";
 // import { createHash } from "crypto";
 
