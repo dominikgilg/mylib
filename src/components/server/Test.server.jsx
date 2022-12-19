@@ -31,6 +31,6 @@ export default function NostoServerTest(props) {
   //     .update(customerData.id + storeDomain)
   //     .digest("hex");
   // }
-  //   return <div>NOSTO SERVER TEST</div>;
-  return <NostoComponent customerData={customerData} type="NostoSession" />;
+  return <div>NOSTO SERVER TEST</div>;
+  //   return <NostoComponent customerData={customerData} type="NostoSession" />;
 }
