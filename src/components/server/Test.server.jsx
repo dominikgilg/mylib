@@ -1,4 +1,4 @@
-// import { default as NostoComponent } from "@nosto/nosto-react/src/components/Session/index.client";
+import { NostoSession as NostoComponent } from "@nosto/nosto-react/src/index.client";
 import { useShopQuery, gql, useSession, useShop } from "@shopify/hydrogen";
 // import { createHash } from "crypto";
 
@@ -31,6 +31,6 @@ export default function NostoServerTest(props) {
   //     .update(customerData.id + storeDomain)
   //     .digest("hex");
   // }
-  return <div>NOSTO SERVER TEST</div>;
-  //   return <NostoComponent customerData={customerData} type="NostoSession" />;
+  //   return <div>NOSTO SERVER TEST</div>;
+  return <NostoComponent customerData={customerData} type="NostoSession" />;
 }
