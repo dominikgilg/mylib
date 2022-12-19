@@ -15,9 +15,9 @@ export default defineConfig({
       fileName: (format, name) => `index.${format}.${name}.js`,
     },
     rollupOptions: {
-      include: ["@nosto/nosto-react"],
       external: ["react", "react-dom", "@shopify/hydrogen"],
       output: {
+        include: ["@nosto/nosto-react"],
         globals: {
           react: "React",
           "react-dom": "ReactDOM",
