@@ -27,7 +27,7 @@ export default function NostoServerTest(props) {
   console.log(customerData?.id);
 
   if (customerData?.id && storeDomain) {
-    customerData.customerReference = createHash("sha256")
+    customerData.customerReference = Crypto.createHash("sha256")
       .update(customerData.id + storeDomain)
       .digest("hex");
   }
