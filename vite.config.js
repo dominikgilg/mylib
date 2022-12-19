@@ -19,7 +19,7 @@ export default defineConfig({
         "react",
         "react-dom",
         "@shopify/hydrogen",
-        // "@nosto/nosto-react",
+        "@nosto/nosto-react",
       ],
       output: {
         globals: {
