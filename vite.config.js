@@ -7,11 +7,11 @@ export default defineConfig({
   build: {
     lib: {
       entry: {
-        client: resolve(__dirname, "src/components/index.client.js"),
+        // client: resolve(__dirname, "src/components/index.client.js"),
         server: resolve(__dirname, "src/components/index.server.js"),
       },
       name: "@nosto/nosto-hydrogen",
-      formats: ["esm", "cjs"],
+      formats: ["es", "umd"],
       fileName: (format, name) => `index.${format}.${name}.js`,
     },
     rollupOptions: {
