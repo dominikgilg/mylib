@@ -24,7 +24,4 @@ export default defineConfig({
       },
     },
   },
-  optimizeDeps: {
-    include: ["@nosto/nosto-react"],
-  },
 });
