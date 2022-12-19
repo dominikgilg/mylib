@@ -11,7 +11,7 @@ export default defineConfig({
         server: resolve(__dirname, "src/components/index.server.js"),
       },
       name: "@nosto/nosto-hydrogen",
-      formats: ["es", "umd"],
+      sformats: ["es", "umd"],
       fileName: (format, name) => `index.${format}.${name}.js`,
     },
     rollupOptions: {
