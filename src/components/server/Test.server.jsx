@@ -1,6 +1,6 @@
 // import { NostoSession as NostoComponent } from "@nosto/nosto-react";
 import { useShopQuery, gql, useSession, useShop } from "@shopify/hydrogen";
-import { createHash } from "node:crypto";
+import Crypto from "node:crypto";
 
 export default function NostoServerTest(props) {
   console.log("NOSTO SESSION!!! :)");
