@@ -24,6 +24,8 @@ export default function NostoServerTest(props) {
     query: QUERY,
   });
 
+  console.log(customerData?.id);
+
   // if (customerData?.id && storeDomain) {
   //   customerData.customerReference = createHash("sha256")
   //     .update(customerData.id + storeDomain)
