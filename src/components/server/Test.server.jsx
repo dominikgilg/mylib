@@ -1,7 +1,7 @@
 // import { NostoSession as NostoComponent } from "@nosto/nosto-react";
 import { useShopQuery, gql, useSession, useShop } from "@shopify/hydrogen";
 // import Crypto from "node:crypto";
-// import { TestComponent as NostoComponent } from "@nosto/test-component";
+import { TestComponent as NostoComponent } from "@nosto/test-component";
 // import { NostoSession} from "@nosto/nosto-react/prebuild";
 
 export default function (props) {
@@ -37,6 +37,6 @@ export default function (props) {
   //   console.log("REFEERNCE: ", customerData?.customerReference);
 
   //   return <div>NOSTO SERVER TEST</div>;
-  return <NostoSession customerData={customerData} type="NostoSession" />;
+  return <NostoComponent customerData={customerData} type="NostoSession" />;
   //   return <TestComponent />;
 }
