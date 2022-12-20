@@ -4,6 +4,9 @@ import { defineConfig } from "vite";
 
 export default defineConfig({
   plugins: [react()],
+  optimizeDeps: {
+    include: ["@nosto/nosto-react"],
+  },
   build: {
     lib: {
       entry: {
@@ -14,9 +17,7 @@ export default defineConfig({
       sformats: ["es", "umd"],
       fileName: (format, name) => `index.${format}.${name}.js`,
     },
-    optimizeDeps: {
-      exclude: ["@nosto/nosto-react"],
-    },
+
     rollupOptions: {
       external: ["react", "react-dom", "@shopify/hydrogen"],
       output: {
