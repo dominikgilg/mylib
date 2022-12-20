@@ -4,7 +4,7 @@ import { useShopQuery, gql, useSession, useShop } from "@shopify/hydrogen";
 // import { TestComponent } from "@nosto/test-component";
 import { default as NostoComponent } from "@nosto/nosto-react";
 
-export default function NostoServerTest(props) {
+export default function (props) {
   console.log("NOSTO SESSION!!! :)");
 
   const { storeDomain } = useShop();
