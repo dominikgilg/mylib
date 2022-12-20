@@ -2,7 +2,7 @@
 import { useShopQuery, gql, useSession, useShop } from "@shopify/hydrogen";
 // import Crypto from "node:crypto";
 // import { TestComponent } from "@nosto/test-component";
-import { default as NostoComponent } from "@nosto/nosto-react";
+import { NostoComponent } from "@nosto/nosto-react";
 
 export default function (props) {
   console.log("NOSTO SESSION!!! :)");
