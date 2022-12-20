@@ -18,12 +18,7 @@ export default defineConfig({
       exclude: ["@nosto/nosto-react"],
     },
     rollupOptions: {
-      external: [
-        "react",
-        "react-dom",
-        "@shopify/hydrogen",
-        "@nosto/nosto-react",
-      ],
+      external: ["react", "react-dom", "@shopify/hydrogen"],
       output: {
         globals: {
           react: "React",
