@@ -27,7 +27,7 @@ export default function (props) {
     query: QUERY,
   });
 
-  let hash = shae256("test");
+  let hash = sha256("test");
   console.log("hash: ", hash);
 
   console.log(customerData?.id);
