@@ -14,7 +14,7 @@ export default defineConfig({
         server: resolve(__dirname, "src/components/index.server.js"),
       },
       name: "@nosto/nosto-hydrogen",
-      formats: ["es", "umd"],
+      formats: ["es", "cjs"],
       fileName: (format, name) => `index.${format}.${name}.js`,
     },
 
