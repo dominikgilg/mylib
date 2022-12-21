@@ -12,6 +12,7 @@ export default defineConfig({
       entry: {
         client: resolve(__dirname, "src/components/index.client.js"),
         server: resolve(__dirname, "src/components/index.server.js"),
+        plugin: resolve(__dirname, "src/plugin.js"),
       },
       name: "@nosto/nosto-hydrogen",
       formats: ["es", "cjs"],
