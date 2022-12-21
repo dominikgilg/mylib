@@ -37,6 +37,6 @@ export default function (props) {
   //   console.log("REFEERNCE: ", customerData?.customerReference);
 
   //   return <div>NOSTO SERVER TEST</div>;
-  return <NostoComponent customerData={customerData} type="NostoSession" />;
-  //   return <TestComponent />;
+  //   return <NostoComponent customerData={customerData} type="NostoSession" />;
+  return <TestComponent />;
 }
