@@ -5,7 +5,7 @@ import { defineConfig } from "vite";
 export default defineConfig({
   plugins: [react()],
   optimizeDeps: {
-    include: ["@nosto/test-component"],
+    include: ["@nosto/test-component", "js-sha256"],
   },
   build: {
     lib: {
