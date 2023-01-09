@@ -8,9 +8,9 @@ export default defineConfig({
       jsxRuntime: "classic",
     }),
   ],
-  optimizeDeps: {
-    include: ["@nosto/test-component", "js-sha256"],
-  },
+  // optimizeDeps: {
+  //   include: ["@nosto/test-component", "js-sha256"],
+  // },
   build: {
     lib: {
       entry: {
