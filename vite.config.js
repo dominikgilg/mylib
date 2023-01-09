@@ -19,7 +19,7 @@ export default defineConfig({
         // plugin: resolve(__dirname, "src/plugin.js"),
       },
       name: "@nosto/nosto-hydrogen",
-      formats: ["es", "cjs"],
+      formats: ["es"],
       fileName: (format, name) =>
         name == "plugin" ? `${format}/plugin.js` : `${format}/index.${name}.js`,
     },
