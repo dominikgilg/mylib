@@ -1,6 +1,6 @@
 import { NostoSession as NostoComponent } from "@nosto/nosto-react/hydrogen";
 import { useShopQuery, gql, useSession, useShop } from "@shopify/hydrogen";
-// import { sha256 } from "js-sha256";
+import { sha256 } from "sha256";
 // import Crypto from "crypto";
 
 export default function NostoSession(props) {
@@ -25,11 +25,11 @@ export default function NostoSession(props) {
     query: QUERY,
   });
 
-  // console.log("test-hash", sha256("test"));
+  console.log("test-hash", sha256("test"));
 
-  // if (customerData?.id && storeDomain) {
-  //   customerData.customerReference = sha256(customerData.id + storeDomain);
-  // }
+  if (customerData?.id && storeDomain) {
+    customerData.customerReference = sha256(customerData.id + storeDomain);
+  }
 
   // if (customerData?.id && storeDomain) {
   //   customerData.customerReference = Crypto.createHash("sha256")

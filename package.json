@@ -22,7 +22,7 @@
     "@nosto/test-component": "github:dominikgilg/test-component",
     "@vitejs/plugin-react": "^3.0.0",
     "vite": "^4.0.0",
-    "js-sha256": "^0.9.0"
+    "sha256": "^0.2.0"
   },
   "devDependencies": {
     "@shopify/hydrogen": "^1.6.5",
