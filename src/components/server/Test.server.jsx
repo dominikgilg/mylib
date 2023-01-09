@@ -3,7 +3,7 @@ import { useShopQuery, gql, useSession, useShop } from "@shopify/hydrogen";
 // import Crypto from "node:crypto";
 import { sha256 } from "js-sha256";
 // import { TestComponent as NostoComponent } from "@nosto/test-component";
-import { NostoSession as NostoComponent } from "@nosto/nosto-react/prebuild";
+import { NostoSession as NostoComponent } from "@nosto/nosto-react";
 
 export default function (props) {
   console.log("NOSTO SESSION!!! :)");
