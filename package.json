@@ -6,9 +6,9 @@
     "dist",
     "src"
   ],
-  "module": "src/index.mjs",
+  "module": "src/index.js",
   "exports": {
-    ".": "./src/index.mjs"
+    ".": "./src/index.js"
   },
   "scripts": {
     "dev": "vite",
