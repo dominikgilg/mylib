@@ -7,9 +7,9 @@
     "src"
   ],
   "type": "module",
-  "module": "src/index.js",
+  "module": "src/index.mjs",
   "exports": {
-    ".": "./src/index.js"
+    ".": "./src/index.mjs"
   },
   "scripts": {
     "dev": "vite",
