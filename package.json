@@ -6,12 +6,13 @@
     "dist",
     "src"
   ],
-  "main": "src/index.js",
+  "type": "module",
+  "main": "src/index.cjs",
   "module": "src/index.js",
   "exports": {
     ".": {
       "import": "./src/index.js",
-      "require": "./src/index.js"
+      "require": "./src/index.cjs"
     }
   },
   "scripts": {

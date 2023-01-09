@@ -3,7 +3,11 @@ import { resolve } from "path";
 import { defineConfig } from "vite";
 
 export default defineConfig({
-  plugins: [react()],
+  plugins: [
+    react({
+      jsxRuntime: "classic",
+    }),
+  ],
   optimizeDeps: {
     include: ["@nosto/test-component", "js-sha256"],
   },
@@ -16,9 +20,9 @@ export default defineConfig({
       },
       name: "@nosto/nosto-hydrogen",
       formats: ["es", "cjs"],
-      fileName: (format, name) => `index.${format}.${name}.js`,
+      fileName: (format, name) =>
+        name == "plugin" ? `${format}/plugin.js` : `${format}/index.${name}.js`,
     },
-
     rollupOptions: {
       external: ["react", "react-dom", "@shopify/hydrogen"],
       output: {
@@ -29,4 +33,38 @@ export default defineConfig({
       },
     },
   },
+  // build: {
+  //   rollupOptions: {
+  //     input: {
+  //       client: resolve(__dirname, "src/components/index.client.js"),
+  //       server: resolve(__dirname, "src/components/index.server.js"),
+  //     },
+  //     external: [
+  //       "react",
+  //       "react-dom",
+  //       "@shopify/hydrogen",
+  //       // "@nosto/nosto-react",
+  //     ],
+  //     output: [
+  //       {
+  //         format: "es",
+  //         dir: "dist/es",
+  //         entryFileNames: "entry-[name].js",
+  //         globals: {
+  //           react: "React",
+  //           "react-dom": "ReactDOM",
+  //         },
+  //       },
+  //       {
+  //         format: "cjs",
+  //         dir: "dist/cjs",
+  //         entryFileNames: "entry-[name].js",
+  //         globals: {
+  //           react: "React",
+  //           "react-dom": "ReactDOM",
+  //         },
+  //       },
+  //     ],
+  //   },
+  // },
 });
