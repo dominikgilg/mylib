@@ -1,9 +1,10 @@
 import react from "@vitejs/plugin-react";
+import hydrogen from "@shopify/hydrogen/plugin";
 import { resolve } from "path";
 import { defineConfig } from "vite";
 //
 export default defineConfig({
-  plugins: [react()],
+  plugins: [hydrogen()],
   optimizeDeps: {
     include: ["@nosto/nosto-react"],
   },
