@@ -1,5 +1,5 @@
 import { NostoSession as NostoComponent } from "@nosto/nosto-react/hydrogen";
-import { NostoPlacement } from "@nosto/nosto-react";
+import { NostoOther } from "@nosto/nosto-react";
 import { useShopQuery, gql, useSession, useShop } from "@shopify/hydrogen";
 import { sha256 } from "js-sha256";
 
@@ -32,8 +32,8 @@ export default function NostoSession(props) {
   }
   return (
     <div>
+      <NostoOther></NostoOther>
       <div>NOSTO SESSION</div>
-      <NostoPlacement></NostoPlacement>
     </div>
   );
   // return <NostoComponent customerData={customerData} type="NostoSession" />;
