@@ -4,9 +4,9 @@ import { defineConfig } from "vite";
 //
 export default defineConfig({
   plugins: [react()],
-  // optimizeDeps: {
-  //   include: ["@nosto/test-component", "js-sha256"],
-  // },
+  optimizeDeps: {
+    include: ["@nosto/nosto-react"],
+  },
   build: {
     lib: {
       entry: {
@@ -24,12 +24,7 @@ export default defineConfig({
       //   name == "plugin" ? `${format}/plugin.js` : `${format}/index.js`,
     },
     rollupOptions: {
-      external: [
-        "react",
-        "react-dom",
-        "@shopify/hydrogen",
-        "@nosto/nosto-react",
-      ],
+      external: ["react", "react-dom", "@shopify/hydrogen"],
       output: {
         globals: {
           react: "React",
