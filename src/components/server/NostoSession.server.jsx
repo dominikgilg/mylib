@@ -2,7 +2,7 @@
 // import { NostoOther } from "@nosto/nosto-react/hydrogen";
 import { useShopQuery, gql, useSession, useShop } from "@shopify/hydrogen";
 import { sha256 } from "js-sha256";
-import { Test } from "@nosto/test-component";
+import { TestComponent } from "@nosto/test-component";
 
 export default function NostoSession(props) {
   console.log("NOSTO SESSION!!!");
@@ -34,7 +34,7 @@ export default function NostoSession(props) {
   return (
     <div>
       {/* <NostoOther></NostoOther> */}
-      <Test></Test>
+      <TestComponent></TestComponent>
       <div>NOSTO SESSION</div>
     </div>
   );
