@@ -9,15 +9,19 @@ export default defineConfig({
   // },
   build: {
     lib: {
-      entry: {
-        client: resolve(__dirname, "src/components/index.client.js"),
-        server: resolve(__dirname, "src/components/index.server.js"),
-        // plugin: resolve(__dirname, "src/plugin.js"),
-      },
+      // entry: {
+      //   client: resolve(__dirname, "src/components/index.client.js"),
+      //   server: resolve(__dirname, "src/components/index.server.js"),
+      //   // plugin: resolve(__dirname, "src/plugin.js"),
+      // },
+      entry: resolve(__dirname, "src/index.js"),
+
       name: "@nosto/nosto-hydrogen",
       formats: ["es"],
+      // fileName: (format, name) =>
+      //   name == "plugin" ? `${format}/plugin.js` : `${format}/index.${name}.js`,
       fileName: (format, name) =>
-        name == "plugin" ? `${format}/plugin.js` : `${format}/index.${name}.js`,
+        name == "plugin" ? `${format}/plugin.js` : `${format}/index.js`,
     },
     rollupOptions: {
       external: ["react", "react-dom", "@shopify/hydrogen"],
