@@ -29,6 +29,6 @@ export default function NostoSession(props) {
   if (customerData?.id && storeDomain) {
     customerData.customerReference = sha256(customerData.id + storeDomain);
   }
-
-  return <NostoComponent customerData={customerData} type="NostoSession" />;
+  return <div>NostoSesion</div>;
+  // return <NostoComponent customerData={customerData} type="NostoSession" />;
 }

@@ -3,7 +3,7 @@ import { resolve } from "path";
 import { defineConfig } from "vite";
 //
 export default defineConfig({
-  // plugins: [react()],
+  plugins: [react()],
   // optimizeDeps: {
   //   include: ["@nosto/test-component", "js-sha256"],
   // },
