@@ -4,7 +4,7 @@ import { resolve } from "path";
 import { defineConfig } from "vite";
 //
 export default defineConfig({
-  plugins: [hydrogen()],
+  plugins: [react()],
   optimizeDeps: {
     include: ["@nosto/nosto-react"],
   },
